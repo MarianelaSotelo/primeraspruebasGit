@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* caracteristicas generales*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #daddd8;
+    font-family: "Poppins", sans-serif !important;
+    padding: 5px rgba(255, 255, 255, 0.267);
+    margin: 0;
+    font-size: 17px;
+}
+
+img {
+    border-radius: 18px;
+    max-width: 100%;
+}
+
+/* caracteristicas header*/
+/*header {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    background-image: url('../img/Epuyen.jpg');
+    background-color: #9be564;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+
+@media (max-width:800px) {
+    header {
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    header img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+header div {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 1.5rem;
+    border-radius: 15px;
+}*/
+#carouselExampleCaptions img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px !important;
+}
+
+#fuentecarrusel {
+    color: #E2F9D7;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-shadow: 3px 3px 3px #000000;
+}
+
+#fuentecarrusel1 {
+    color: #E2F9D7;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-shadow: 3px 3px 3px #000000;
+}
+
+#titulo {
+    text-decoration: none !important;
+    color: whitesmoke !important;
+    font-weight: 700;
+}
+
+#subtitulo {
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+/*barra de navegacion*/
+.barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #97cc03;
+    /*position: sticky;
+    top: 0;*/
+}
+
+.barra a {
+    color: #f5f5f5;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.barra a:hover {
+    background-color: #FFE731;
+    color: black;
+}
+
+@media (max-width:800px) {
+    .barra {
+        position: unset;
+    }
+
+    .barra a {
+        text-align: center;
+
+    }
+}
+
+/*parte principal*/
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main {
+    padding: 10px;
+    flex-basis: 75%;
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    /*background-size: 100% 100%;*/
+    background-color: #E9FFB6;
+}
+
+@media (max-width:800px) {
+    main {
+        background-position: center;
+        flex-direction: column;
+        flex-basis: unset;
+    }
+}
+
+#presentacion {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    color: #8fb339;
+    text-shadow: 2px 2px 2px #232e21;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#intro2 {
+    font-size: 1.1rem;
+    font-weight: inherit;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h4 {
+    text-align: center;
+}
+
+#intro {
+    text-decoration: none;
+    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#conclusion {
+    text-align: center;
+}
+
+.video1 {
+    text-align: center;
+}
+
+iframe {
+    width: 600px;
+    height: 60vh;
+    display: block;
+    margin: auto;
+    padding: 30px;
+}
+
+.ejimagenes {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+
+/*aside*/
+aside {
+    flex-basis: 25%;
+    background-color: #079636;
+    background-image: url(../img/51611da0a9fbd4c76a2a4d1759dbacda.jpg);
+    background-repeat: repeat;
+}
+
+.asidetitulo {
+    color: #D9FDC8;
+    font-size: 2.9rem;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+aside h5 {
+    text-align: center;
+    color: #D9FDC8;
+    margin: 10px;
+}
+
+aside p {
+    text-align: center;
+    font-style: italic;
+    color: #D9FDC8;
+    margin: 10px;
+}
+
+@media (max-width:800px) {
+    aside {
+        background-position: center;
+        flex-direction: column;
+        flex-basis: unset;
+    }
+}
+
+.asideimg img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    transition: 0.4s all ease-in-out;
+}
+
+.asideimg:hover img {
+    transform: scale(1.25);
+}
+
+article {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width:800px) {
+    .asideimg img {
+        width: 75%;
+        height: auto;
+    }
+}
+
+/*footer*/
+footer {
+    background-color: #232e21;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+}
+
+/*formulario*/
+.headerform {
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    background-color: #c7d59f;
+    background-repeat: repeat;
+    padding: 10px;
+}
+@media (max-width:800px) {
+    .headerform {
+        background-position: center;
+        flex-direction: column;
+        flex-basis: unset;
+    }
+}
+
+#imgrecicle {
+    width: 100%;
+    height: 300px;
+}
+
+form {
+    padding: 30px;
+    background-color: #FFE731;
+    background-image: url(../img/save.jpg);
+    background-repeat: repeat;
+    border: 8px outset #8fb339;
+    text-align: center;
+}
+
+legend {
+    font-weight: 700;
+}
+
+label {
+    color: whitesmoke;
+    font-weight: 700;
+    background-color: #97cc03;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: auto;
+    width: fit-content;
+    border: 15px double #97cc03;
+
+}
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+#ultimacolumna {
+    grid-area: 4 / 2 / 4 / 3;
+}
+
+#materiales {
+    grid-area: 3 / 2 / 3 / 3;
+}
+
+/*pagina complementaria 1 "niños"*/
+#niños {
+    display: flex;
+    height: 600px justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.olclass {
+    font-size: 16px;
+}
+
+#tierra {
+    display: block;
+    width: 40%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#fin {
+    text-align: center;
+}
+
+/*pagina complementaria 2 "compost"*/
+#compost {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.parrafo1 {
+    text-align: center;
+}
+
+.conclusion {
+    text-align: center;
+}
